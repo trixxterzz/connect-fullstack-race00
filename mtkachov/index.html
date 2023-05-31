@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="utf-8">
+            <title>Calculator</title>
+            <meta name="description" content="Calculator">
+            <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <div class="history-con top-con" id="historyCon"></div>
+        <div class="calc-con">
+            <div class="top-con">
+                <div class="display-con">
+                    <p class="display" id="history"></p>
+                    <p class="display" id="result">0</p>
+                </div>
+                <div class="button-con">
+                    <button class="calc-button" id="mrecall">MR</button>
+                    <button class="calc-button" id="factorial">x!</button>
+                    <button class="calc-button" id="c">C</button>
+                    <button class="calc-button" id="plusMinus">+/-</button>
+                    <button class="calc-button" id="percent">%</button>
+                    <button class="calc-button" id="division">÷</button>
+                    <button class="calc-button" id="exponentiation">xⁿ</button>
+                    <button class="calc-button number-button" id="7">7</button>
+                    <button class="calc-button number-button" id="8">8</button>
+                    <button class="calc-button number-button" id="9">9</button>
+                    <button class="calc-button" id="multiplication">*</button>
+                    <button class="calc-button" id="mclear">MC</button>
+                    <button class="calc-button" id="root">√x</button>
+                    <button class="calc-button number-button" id="4">4</button>
+                    <button class="calc-button number-button" id="5">5</button>
+                    <button class="calc-button number-button" id="6">6</button>
+                    <button class="calc-button" id="addition">+</button>
+                    <button class="calc-button" id="mminus">M-</button>
+                    <button class="calc-button number-button" id="1">1</button>
+                    <button class="calc-button number-button" id="2">2</button>
+                    <button class="calc-button number-button" id="3">3</button>
+                    <button class="calc-button" id="subtraction">-</button>
+                    <button class="calc-button" id="showHistoryBtn"><img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_history_48px-512.png"></button>
+                    <button class="calc-button" id="mplus">M+</button>
+                    <button class="calc-button number-button" id="0">0</button>
+                    <button class="calc-button" id="dot">.</button>
+                    <button class="calc-button" id="equals">=</button>
+                </div>
+            </div>
+            <div>
+                <div class="top-con" id="measures-con">
+                    <div class="measures-types">
+                        <select id="measures" name="measures">
+                            <option id="firsttypeoption">Length</option>
+                            <option id="secondtypeoption">Weight</option>
+                            <option id="thirdtypeoption">Area</option>
+                        </select>
+                    </div>
+                    <div class="measures-calcs">
+                        <div class="measure-val-con">
+                            <input id="f-measure-input">
+                            <select id="f-measure-select">
+                                <option class="secondPower" id="secondfoption">Centimeters</option>
+                                <option class="thirdPower" id="thirdfoption">Meters</option>
+                                <option class="fourthPower" id="fourthfoption">Kilometers</option>
+                            </select>
+                        </div>
+                        <div class="equal-label">
+                            <p>=</p>
+                        </div>
+                        <div class="measure-val-con" id="s">
+                            <input readonly id="s-measure-input">
+                            <select id="s-measure-select">
+                                <option class="secondPower" id="secondsoption">Centimeters</option>
+                                <option class="thirdPower" id="thirdsoption">Meters</option>
+                                <option class="fourthPower" id="fourthsoption">Kilometers</option>
+                            </select>
+                        </div>
+                        <button class="calc-button" id="convert">Convert</button>
+                    </div>
+                </div>
+                <div class="top-con" id="measures-con">
+                    <div class="measures-calcs">
+                        <div class="measure-val-con">
+                            <input id="f-system-input">
+                            <select id="f-system-select">
+                                <option class="secondPower" id="secondfsoption">Decimal</option>
+                                <option class="thirdPower" id="thirdfsoption">Hexadecimal</option>
+                                <option class="fourthPower" id="fourthfsoption">Binary</option>
+                            </select>
+                        </div>
+                        <div class="equal-label">
+                            <p>=</p>
+                        </div>
+                        <div class="measure-val-con" id="s">
+                            <input readonly id="s-system-input">
+                            <select id="s-system-select">
+                                <option class="secondPower" id="secondssoption">Decimal</option>
+                                <option class="thirdPower" id="thirdssoption">Hexadecimal</option>
+                                <option class="fourthPower" id="fourthssoption">Binary</option>
+                            </select>
+                        </div>
+                        <button class="calc-button" id="convertSystem">Convert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="import-export-con">
+            <button class="calc-button import-btn" id="exportHistory">Export calculation history to clipboard</button>
+            <button class="calc-button import-btn" id="importHistory">Import calculation history</button>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

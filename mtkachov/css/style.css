@@ -1,0 +1,228 @@
+body{
+    background-color: rgb(50, 48, 49);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calc-button{
+    height: 55px;
+    width: 60px;
+    background: none;
+    border: 2px solid rgb(170, 42, 42);
+    color: lightgray;
+    font-size: 20px;
+    background-color: rgb(50, 48, 49);
+    position: relative;
+}
+
+.calc-button:hover{
+    background-color: rgb(170, 42, 42);
+    cursor: pointer;
+    background-color: rgba(170, 42, 42, 0.9);
+    border: none;
+}
+
+.button-con{
+    display: grid;
+    grid-template-columns: repeat(6, 16%);
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    width: 379px;
+    height: 290px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(30, 29, 28);
+    margin-top: 10px;
+}
+
+.top-con{
+    position: relative;
+    width: 399px;
+    margin-left: 20%;
+    margin-top: 40px;
+    background-color: rgb(30, 29, 28);
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#equals{
+    grid-column: 5 / 7;
+    width: 100%;
+    background-color: rgb(170, 42, 42);
+    border: none;
+}
+
+#equals:hover{
+    background-color: rgba(170, 42, 42, 0.9);
+}
+
+.display-con{
+    background-color: lightgray;
+    width: 381px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 30px;
+    margin-left: 10px;
+}
+
+#mclear{
+    grid-row: 1 / 3;
+    height: 100%;
+}
+#mrecall{
+    grid-row: 3 / 5;
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+    color: lightgray;
+}
+
+
+.display{
+    text-align: right;
+    font-weight: 500;
+    position: absolute;
+    width: 100%;
+    max-width: 350px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#result{
+    font-size: 50px;
+    color: rgb(170, 42, 42);
+    top: 80px;
+    height: 70px;
+}
+
+#history{
+    color: rgba(50, 48, 49, 0.4);
+    font-size: 30px;
+    height: 50px;
+}
+
+.history-con {
+    color: white;
+    display: none;
+}
+
+.import-btn {
+    width: auto;
+    margin: 5px;
+}
+
+.import-btn:hover {
+    border: 2px solid rgb(170, 42, 42);
+}
+
+.import-export-con {
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    width: auto;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.calc-con{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 10%;
+    top: -40px;
+    position: relative;
+}
+
+#measures-con{
+    height: 220px;
+    margin-left: 0px;
+}
+
+#measures{
+    background: rgb(50, 48, 49);
+    text-align: center;
+    color: lightgray;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 30%;
+}
+
+#measures:hover, #f-measure-select:hover, #s-measure-select:hover, #f-system-select:hover, #s-system-select:hover{
+    cursor: pointer;
+}
+
+.measures-calcs{
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    position: relative;
+    top: -15px;
+}
+
+.equal-label{
+    color: lightgray;
+    font-size: 40px;
+    left: -3px;
+}
+
+#f-measure-input, #s-measure-input, #f-system-input, #s-system-input{
+    margin-top: 50px;
+    width: 88%;
+    height: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: lightgray;
+    border: none;
+    color: rgb(170, 42, 42);
+    font-size: 30px;
+}
+
+#f-measure-input:focus, #s-measure-input:focus, #f-system-input:focus, #s-system-input:focus{
+    outline: none;
+}
+
+#f-measure-select, #s-measure-select, #f-system-select, #s-system-select{
+    width: calc(90% + 1px);
+    height: 30px;
+    background: rgb(50, 48, 49);
+    text-align: center;
+    color: lightgray;
+}
+
+
+
+#convert, #convertSystem{
+    width: 100px;
+    margin-left: 145px;
+    margin-top: 10px;
+}
+
+select{
+    border: 2px solid rgb(170, 42, 42);
+}
+
+#s{
+    left: 5px;
+    position: relative;
+}
+
+#historyCon{
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: -280px;
+    width: 200px;
+}
+
+img{
+    width: 35px;
+    position: relative;
+    top: 2px;
+}
